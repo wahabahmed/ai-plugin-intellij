@@ -1,0 +1,28 @@
+<idea-plugin>
+
+    <id>com.turbo.dev.plugin</id>
+
+    <name>TurboDev AI</name>
+
+    <vendor email="support@turbodev.ai">
+        TurboDev
+    </vendor>
+
+    <description>
+        TurboDev AI Assistant Plugin
+    </description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.intellij.plugins.markdown</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+
+        <toolWindow
+                id="TurboDev"
+                secondary="false"
+                anchor="right"
+                factoryClass="com.turbo.dev.plugin.factory.TurboDevChatFactory"
+                icon="/icons/pluginIcon.svg"/>
+    </extensions>
+</idea-plugin>
+
